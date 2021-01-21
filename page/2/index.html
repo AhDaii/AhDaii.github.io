@@ -1,0 +1,259 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>hunz1's blog</title><meta name="author" content="hunz1"><meta name="copyright" content="hunz1"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta property="og:type" content="website">
+<meta property="og:title" content="hunz1&#39;s blog">
+<meta property="og:url" content="http://jpcr.xyz/page/2/index.html">
+<meta property="og:site_name" content="hunz1&#39;s blog">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://jpcr.xyz/img/avatar.png">
+<meta property="article:author" content="hunz1">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://jpcr.xyz/img/avatar.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://jpcr.xyz/page/2/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.js" defer></script><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: {"appId":"WMKXMUDZEJ","apiKey":"8f4cc1e62ce13c6c71123dfd4a761686","indexName":"hunz1_Algolia","hits":{"per_page":6},"languages":{"input_placeholder":"搜索文章","hits_empty":"找不到您查询的内容：${query}","hits_stats":"找到 ${hits} 条结果，用时 ${time} 毫秒"}},
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: hunz1","link":"链接: ","source":"来源: hunz1's blog","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+};
+
+var saveToLocal = {
+  set: function setWithExpiry(key, value, ttl) {
+    const now = new Date()
+    const expiryDay = ttl * 86400000
+    const item = {
+      value: value,
+      expiry: now.getTime() + expiryDay,
+    }
+    localStorage.setItem(key, JSON.stringify(item))
+  },
+
+  get: function getWithExpiry(key) {
+    const itemStr = localStorage.getItem(key)
+
+    if (!itemStr) {
+      return undefined
+    }
+    const item = JSON.parse(itemStr)
+    const now = new Date()
+
+    if (now.getTime() > item.expiry) {
+      localStorage.removeItem(key)
+      return undefined
+    }
+    return item.value
+  }
+}
+
+// https://stackoverflow.com/questions/16839698/jquery-getscript-alternative-in-native-javascript
+const getScript = url => new Promise((resolve, reject) => {
+  const script = document.createElement('script')
+  script.src = url
+  script.async = true
+  script.onerror = reject
+  script.onload = script.onreadystatechange = function() {
+    const loadState = this.readyState
+    if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+    script.onload = script.onreadystatechange = null
+    resolve()
+  }
+  document.head.appendChild(script)
+})</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2021-01-21 23:40:31'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(function () {  window.activateDarkMode = function () {
+    document.documentElement.setAttribute('data-theme', 'dark')
+    if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+    }
+  }
+  window.activateLightMode = function () {
+    document.documentElement.setAttribute('data-theme', 'light')
+   if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+    }
+  }
+  const autoChangeMode = 'false'
+  const t = saveToLocal.get('theme')
+  if (autoChangeMode === '1') {
+    const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+    const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+    const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+    if (t === undefined) {
+      if (isLightMode) activateLightMode()
+      else if (isDarkMode) activateDarkMode()
+      else if (isNotSpecified || hasNoSupport) {
+        const now = new Date()
+        const hour = now.getHours()
+        const isNight = hour <= 6 || hour >= 18
+        isNight ? activateDarkMode() : activateLightMode()
+      }
+      window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+        if (saveToLocal.get('theme') === undefined) {
+          e.matches ? activateDarkMode() : activateLightMode()
+        }
+      })
+    } else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else if (autoChangeMode === '2') {
+    const now = new Date()
+    const hour = now.getHours()
+    const isNight = hour <= 6 || hour >= 18
+    if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+    else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else {
+    if (t === 'dark') activateDarkMode()
+    else if (t === 'light') activateLightMode()
+  }const asideStatus = saveToLocal.get('aside-status')
+if (asideStatus !== undefined) {
+   if (asideStatus === 'hide') {
+     document.documentElement.classList.add('hide-aside')
+   } else {
+     document.documentElement.classList.remove('hide-aside')
+   }
+}const fontSizeVal = saveToLocal.get('global-font-size')
+if (fontSizeVal !== undefined) {
+  document.documentElement.style.setProperty('--global-font-size', fontSizeVal + 'px')
+}})()</script><meta name="generator" content="Hexo 5.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">18</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">3</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">12</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url(https://ae01.alicdn.com/kf/U826a4016c4334fb3bd9a7ace2fa693498.jpg)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">hunz1's blog</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">hunz1's blog</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/AhDaii" target="_blank" title="Github"><i class="fab fa-github"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2019/03/27/L2-016-%E6%84%BF%E5%A4%A9%E4%B8%8B%E6%9C%89%E6%83%85%E4%BA%BA%E9%83%BD%E6%98%AF%E5%A4%B1%E6%95%A3%E5%A4%9A%E5%B9%B4%E7%9A%84%E5%85%84%E5%A6%B9/" title="L2-016 愿天下有情人都是失散多年的兄妹">     <img class="post_bg" src="https://www.hualigs.cn/image/600995f2e4ee7.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="L2-016 愿天下有情人都是失散多年的兄妹"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/03/27/L2-016-%E6%84%BF%E5%A4%A9%E4%B8%8B%E6%9C%89%E6%83%85%E4%BA%BA%E9%83%BD%E6%98%AF%E5%A4%B1%E6%95%A3%E5%A4%9A%E5%B9%B4%E7%9A%84%E5%85%84%E5%A6%B9/" title="L2-016 愿天下有情人都是失散多年的兄妹">L2-016 愿天下有情人都是失散多年的兄妹</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2019-03-27T05:45:05.000Z" title="发表于 2019-03-27 13:45:05">2019-03-27</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-01-21T15:22:07.976Z" title="更新于 2021-01-21 23:22:07">2021-01-21</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E7%AE%97%E6%B3%95/">算法</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/%E7%AE%97%E6%B3%95/BFS/">BFS</a></span></div><div class="content"> L2-016 愿天下有情人都是失散多年的兄妹 （25 分)
+呵呵。大家都知道五服以内不得通婚，即两个人最近的共同祖先如果在五代以内（即本人、父母、祖父母、曾祖父母、高祖父母）则不可通婚。本题就请你帮助一对有情人判断一下，他们究竟是否可以成婚？
+
+输入格式：
+输入第一行给出一个正整数N（2 ≤ N≤10410^4104），随后N行，每行按以下格式给出一个人的信息：
+
+本人ID 性别 父亲ID 母亲ID
+
+其中ID是5位数字，每人不同；性别M代表男性、F代表女性。如果某人的父亲或母亲已经不可考，则相应的ID位置上标记为-1。
+接下来给出一个正整数K，随后K行，每行给出一对有情人的ID，其间以空格分隔。
+注意：题目保证两个人是同辈，每人只有一个性别，并且血缘关系网中没有乱伦或隔辈成婚的情况。
+输出格式：
+对每一对有情人，判断他们的关系是否可以通婚：如果两人是同性，输出Never Mind；如果是异性并且关系出了五服，输出Yes；如果异性关系未出五服，输出No。
+输入样例：
+
+24
+00001 M 01111 -1
+00002 F 02222 03333
+00003 M 02222 0333 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2019/03/26/L2-010-%E6%8E%92%E5%BA%A7%E4%BD%8D/" title="L2-010 排座位">     <img class="post_bg" src="https://www.hualigs.cn/image/600995f2e4ee7.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="L2-010 排座位"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/03/26/L2-010-%E6%8E%92%E5%BA%A7%E4%BD%8D/" title="L2-010 排座位">L2-010 排座位</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2019-03-26T11:23:46.000Z" title="发表于 2019-03-26 19:23:46">2019-03-26</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-01-21T15:22:02.308Z" title="更新于 2021-01-21 23:22:02">2021-01-21</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E7%AE%97%E6%B3%95/">算法</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/%E7%AE%97%E6%B3%95/%E5%B9%B6%E6%9F%A5%E9%9B%86/">并查集</a></span></div><div class="content"> L2-010 排座位 （25 分)
+布置宴席最微妙的事情，就是给前来参宴的各位宾客安排座位。无论如何，总不能把两个死对头排到同一张宴会桌旁！这个艰巨任务现在就交给你，对任何一对客人，请编写程序告诉主人他们是否能被安排同席。
+
+输入格式：
+输入第一行给出3个正整数：N（≤100），即前来参宴的宾客总人数，则这些人从1到N编号；M为已知两两宾客之间的关系数；K为查询的条数。随后M行，每行给出一对宾客之间的关系，格式为：宾客1 宾客2 关系，其中关系为1表示是朋友，-1表示是死对头。注意两个人不可能既是朋友又是敌人。最后K行，每行给出一对需要查询的宾客编号。
+这里假设朋友的朋友也是朋友。但敌人的敌人并不一定就是朋友，朋友的敌人也不一定是敌人。只有单纯直接的敌对关系才是绝对不能同席的。
+输出格式：
+对每个查询输出一行结果：如果两位宾客之间是朋友，且没有敌对关系，则输出No problem；如果他们之间并不是朋友，但也不敌对，则输出OK；如果他们之间有敌对，然而也有共同的朋友，则输出OK but...；如果他们之间只有敌对关系，则输出No way。
+输入样例：
+
+7 8 4
+5 6 1
+2 7 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2019/03/23/L2-008-%E6%9C%80%E9%95%BF%E5%AF%B9%E7%A7%B0%E5%AD%90%E4%B8%B2/" title="L2-008 最长对称子串">     <img class="post_bg" src="https://www.hualigs.cn/image/600995f2e4ee7.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="L2-008 最长对称子串"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/03/23/L2-008-%E6%9C%80%E9%95%BF%E5%AF%B9%E7%A7%B0%E5%AD%90%E4%B8%B2/" title="L2-008 最长对称子串">L2-008 最长对称子串</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2019-03-23T12:08:18.000Z" title="发表于 2019-03-23 20:08:18">2019-03-23</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-01-21T15:21:55.473Z" title="更新于 2021-01-21 23:21:55">2021-01-21</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E7%AE%97%E6%B3%95/">算法</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/%E7%AE%97%E6%B3%95/%E5%AD%97%E7%AC%A6%E4%B8%B2/">字符串</a></span></div><div class="content"> L2-008 最长对称子串 （25 分)
+对给定的字符串，本题要求你输出最长对称子串的长度。例如，给定Is PAT&amp;TAP symmetric?，最长对称子串为s PAT&amp;TAP s，于是你应该输出11。
+
+输入格式：
+输入在一行中给出长度不超过1000的非空字符串。
+输出格式：
+在一行中输出最长对称子串的长度。
+输入样例：
+
+Is PAT&amp;TAP symmetric?
+
+输出样例：
+
+11
+
+
+思路：Manacher算法的模板题
+
+AC代码:
+1234567891011121314151617181920212223242526272829303132333435#include &lt;bits/stdc++.h&gt;using namespace std;string s;int p[2333];int manacher()&#123;    string a = &quot;$&quot;;    for (int i = 0; i &lt; s.size(); i++)        a = a + &quot;#&quot; + s[i];    ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2019/03/21/L1-050-%E5%80%92%E6%95%B0%E7%AC%ACN%E4%B8%AA%E5%AD%97%E7%AC%A6%E4%B8%B2/" title="L1-050 倒数第N个字符串">     <img class="post_bg" src="https://www.hualigs.cn/image/600995f2e4ee7.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="L1-050 倒数第N个字符串"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/03/21/L1-050-%E5%80%92%E6%95%B0%E7%AC%ACN%E4%B8%AA%E5%AD%97%E7%AC%A6%E4%B8%B2/" title="L1-050 倒数第N个字符串">L1-050 倒数第N个字符串</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2019-03-21T13:51:33.000Z" title="发表于 2019-03-21 21:51:33">2019-03-21</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-01-21T15:21:48.341Z" title="更新于 2021-01-21 23:21:48">2021-01-21</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E7%AE%97%E6%B3%95/">算法</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/%E7%AE%97%E6%B3%95/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/">进制转换</a></span></div><div class="content"> L1-050 倒数第N个字符串 （15 分）
+给定一个完全由小写英文字母组成的字符串等差递增序列，该序列中的每个字符串的长度固定为 L，从 L 个 a 开始，以 1 为步长递增。例如当 L 为 3 时，序列为 { aaa, aab, aac, …, aaz, aba, abb, …, abz, …, zzz }。这个序列的倒数第27个字符串就是 zyz。对于任意给定的 L，本题要求你给出对应序列倒数第 N 个字符串。
+
+输入格式：
+输入在一行中给出两个正整数 L（2 ≤ L ≤ 6）和 N（≤10
+​5
+​​ ）。
+输出格式：
+在一行中输出对应序列倒数第 N 个字符串。题目保证这个字符串是存在的。
+输入样例：
+
+3 7417
+
+输出样例：
+
+pat
+
+
+思路：将这个问题看成二十七(因为英文字母有26个)进制求余数就很好理解
+
+AC代码:
+123456789101112131415161718#include &lt;bits/stdc++.h&gt;using namespace std;char a[100];int main()&#123;    int L, N;    cin ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2019/03/15/Integer.getInteger&amp;Integer.valueOf/" title="区分Integer.getInteger和Integer.valueOf使用方法">     <img class="post_bg" src="https://www.hualigs.cn/image/600995f2e4ee7.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="区分Integer.getInteger和Integer.valueOf使用方法"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/03/15/Integer.getInteger&amp;Integer.valueOf/" title="区分Integer.getInteger和Integer.valueOf使用方法">区分Integer.getInteger和Integer.valueOf使用方法</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2019-03-15T15:05:57.000Z" title="发表于 2019-03-15 23:05:57">2019-03-15</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2019-03-15T15:24:46.924Z" title="更新于 2019-03-15 23:24:46">2019-03-15</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/Java/">Java</a></span></div><div class="content"> 区分Integer.getInteger和Integer.valueOf使用方法
+Integer类有两个看起来很类似的静态方法，一个是Integer.getInteger(String),另外一个是Integer.valueOf(String）。如果只看方法名称的话，很容易将这两个方法的功能区分开来，还是让我们来看看Java文档。
+
+Integer.getInteger(String)的功能是根据指定的名称得到系统属性的整数值。第一个参数将被认为是系统属性的名称。系统属性可以通过 System.getProperty(java.lang.String)方法访问得到。属性值字符串将被解释成一个整数，并且以表示这个值的Integer对象形式返回。可能出现的数字格式的详细说明可以在 getProperty 的定义说明里找到。
+Integer.valueOf(String)的功能是获取给定的字符串所代表的整数。
+那么就让我来看看是否理解了：Integer.valueOf(String)方法假设String参数表达的是一个数值，会把该数值String转化成Integer。也就是说，Intege ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2019/03/13/RMQ/" title="RMQ算法">     <img class="post_bg" src="https://www.hualigs.cn/image/600995f2e4ee7.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="RMQ算法"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/03/13/RMQ/" title="RMQ算法">RMQ算法</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2019-03-13T13:13:00.000Z" title="发表于 2019-03-13 21:13:00">2019-03-13</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-01-21T15:22:57.064Z" title="更新于 2021-01-21 23:22:57">2021-01-21</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E7%AE%97%E6%B3%95/">算法</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/%E7%AE%97%E6%B3%95/%E5%8C%BA%E9%97%B4%E7%AE%97%E6%B3%95/">区间算法</a></span></div><div class="content">RMQ (Range Minimum/Maximum Query)问题是指：对于长度为n的数列A，回答若干询问RMQ(A,i,j)(i,j&lt;=n)，返回数列A中下标在i,j里的最小(大）值，也就是说，RMQ问题是指求区间最值的问题。
+
+123456789101112131415161718192021222324252627282930313233343536373839404142434445#include &lt;bits/stdc++.h&gt;using namespace std;const int MAXN = 2000010;int N, r;int dp[MAXN][21];void RMQ() //预处理-&gt;O(nlogn)&#123;    for (int j = 1; j &lt;= 20; ++j)        for (int i = 1; i + (1 &lt;&lt; j) - 1 &lt;= N; ++i) //i+(i&lt;&lt;j)-1中的-1是为了取连续的1&lt;&lt;j个数,即[)区间，左闭右开区间            ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2019/03/11/BitAbs/" title="位运算应用-取绝对值">     <img class="post_bg" src="https://www.hualigs.cn/image/600995f2e4ee7.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="位运算应用-取绝对值"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/03/11/BitAbs/" title="位运算应用-取绝对值">位运算应用-取绝对值</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2019-03-11T13:23:00.000Z" title="发表于 2019-03-11 21:23:00">2019-03-11</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-01-21T15:21:22.952Z" title="更新于 2021-01-21 23:21:22">2021-01-21</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E7%AE%97%E6%B3%95/">算法</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/%E7%AE%97%E6%B3%95/%E4%BD%8D%E8%BF%90%E7%AE%97/">位运算</a></span></div><div class="content">以一个字节数举例：
+00000110(6)   y代表符号位即为0   x^y=x(y补码为全0,0异或任何数为本身)   则(x^y)-y=x;
+111111010(-6)   y为-1(补码表示为全1)   x^y=-x-1(000000101)   则(x^y)-y=-x-1-(-1)=-x;
+
+12345678910111213#include &lt;bits/stdc++.h&gt;using namespace std;int main()&#123;    int x;    int len = sizeof(int) * 8 - 1;    cin &gt;&gt; x;    int y = x &gt;&gt; len;    x = (x ^ y) - y;    cout &lt;&lt; x &lt;&lt; endl;    return 0;&#125;</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2019/03/10/FirstBlog/" title="Bank">     <img class="post_bg" src="https://www.hualigs.cn/image/600995f2e4ee7.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Bank"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/03/10/FirstBlog/" title="Bank">Bank</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2019-03-09T16:00:00.000Z" title="发表于 2019-03-10 00:00:00">2019-03-10</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2020-06-30T16:00:36.784Z" title="更新于 2020-07-01 00:00:36">2020-07-01</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E6%97%A5%E5%B8%B8/">日常</a></span></div><div class="content"> 博客更新内容命令
+123$ hexo clean$ hexo g $ hexo d
+ 
+ 
+ 
+
+JAVA1.8 API文档&emsp;[点这里](https://share.weiyun.com/5Afdtti)
+Eclipse_19-03_64&emsp;[点这里](https://share.weiyun.com/5lkM77T)</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">hunz1</div><div class="author-info__description">Cloud 9</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">18</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">3</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">12</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Ah_Daii"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/AhDaii" target="_blank" title="Github"><i class="fab fa-github"></i></a></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2020/12/07/hunz1-OS/" title="hunz1_OS"><img src="https://www.hualigs.cn/image/600995f2e4ee7.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="hunz1_OS"/></a><div class="content"><a class="title" href="/2020/12/07/hunz1-OS/" title="hunz1_OS">hunz1_OS</a><time datetime="2020-12-07T11:40:05.000Z" title="发表于 2020-12-07 19:40:05">2020-12-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/12/06/OS/" title="OS"><img src="https://www.hualigs.cn/image/600995f2e4ee7.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="OS"/></a><div class="content"><a class="title" href="/2020/12/06/OS/" title="OS">OS</a><time datetime="2020-12-06T07:23:53.000Z" title="发表于 2020-12-06 15:23:53">2020-12-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/10/04/%E5%86%9C%E4%BA%A7%E5%93%81%E6%BA%AF%E6%BA%90%E7%B3%BB%E7%BB%9F%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/" title="农产品溯源系统用户手册"><img src="https://www.hualigs.cn/image/600995f2e4ee7.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="农产品溯源系统用户手册"/></a><div class="content"><a class="title" href="/2020/10/04/%E5%86%9C%E4%BA%A7%E5%93%81%E6%BA%AF%E6%BA%90%E7%B3%BB%E7%BB%9F%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/" title="农产品溯源系统用户手册">农产品溯源系统用户手册</a><time datetime="2020-10-04T05:29:55.000Z" title="发表于 2020-10-04 13:29:55">2020-10-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/06/30/2020-SummerPlan/" title="2020 SummerPlan"><img src="https://www.hualigs.cn/image/600995f2e4ee7.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2020 SummerPlan"/></a><div class="content"><a class="title" href="/2020/06/30/2020-SummerPlan/" title="2020 SummerPlan">2020 SummerPlan</a><time datetime="2020-06-30T15:44:36.000Z" title="发表于 2020-06-30 23:44:36">2020-06-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/05/18/SortAlgorithm/" title="排序算法"><img src="https://www.hualigs.cn/image/600995f2e4ee7.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="排序算法"/></a><div class="content"><a class="title" href="/2020/05/18/SortAlgorithm/" title="排序算法">排序算法</a><time datetime="2020-05-18T10:32:00.000Z" title="发表于 2020-05-18 18:32:00">2020-05-18</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline"><i class="fas fa-folder-open"></i><span>分类</span></div><ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Java/"><span class="card-category-list-name">Java</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%97%A5%E5%B8%B8/"><span class="card-category-list-name">日常</span><span class="card-category-list-count">6</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%AE%97%E6%B3%95/"><span class="card-category-list-name">算法</span><span class="card-category-list-count">11</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%AE%97%E6%B3%95/BFS/"><span class="card-category-list-name">BFS</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%AE%97%E6%B3%95/%E4%BD%8D%E8%BF%90%E7%AE%97/"><span class="card-category-list-name">位运算</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%AE%97%E6%B3%95/%E5%8C%BA%E9%97%B4%E7%AE%97%E6%B3%95/"><span class="card-category-list-name">区间算法</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%AE%97%E6%B3%95/%E5%9B%BE%E8%AE%BA/"><span class="card-category-list-name">图论</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%AE%97%E6%B3%95/%E5%AD%97%E7%AC%A6%E4%B8%B2/"><span class="card-category-list-name">字符串</span><span class="card-category-list-count">1</span></a></li></ul></li>
+            <li class="card-category-list-item more is-center"><a class="card-category-list-link-more" href="/categories/">
+                <span>查看更多</span><i class="fas fa-angle-right"></i></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 1.5em; color: rgb(44, 117, 27)">算法</a><a href="/tags/%E6%97%A5%E5%B8%B8/" style="font-size: 1.3em; color: rgb(87, 126, 12)">日常</a><a href="/tags/Java/" style="font-size: 1.1em; color: rgb(131, 55, 33)">Java</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/12/"><span class="card-archive-list-date">十二月 2020</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/10/"><span class="card-archive-list-date">十月 2020</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/06/"><span class="card-archive-list-date">六月 2020</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/05/"><span class="card-archive-list-date">五月 2020</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2019/09/"><span class="card-archive-list-date">九月 2019</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2019/07/"><span class="card-archive-list-date">七月 2019</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2019/05/"><span class="card-archive-list-date">五月 2019</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2019/04/"><span class="card-archive-list-date">四月 2019</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item more is-center"><a class="card-archive-list-link-more" href="/archives/">
+              <span>查看更多</span><i class="fas fa-angle-right"  ></i></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">18</div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">11.1k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2021-01-21T15:40:31.251Z"></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2021 By hunz1</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="font-plus" type="button" title="放大字体"><i class="fas fa-plus"></i></button><button id="font-minus" type="button" title="缩小字体"><i class="fas fa-minus"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="algolia-search"><div class="search-dialog"><div class="search-dialog__title" id="algolia-search-title">Algolia</div><div id="algolia-input-panel"><div id="algolia-search-input"></div></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-stats"></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/search/algolia.js"></script><div class="js-pjax"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></div></body></html>

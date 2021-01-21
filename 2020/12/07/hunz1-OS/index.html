@@ -1,0 +1,470 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>hunz1_OS | hunz1's blog</title><meta name="keywords" content="日常"><meta name="author" content="hunz1"><meta name="copyright" content="hunz1"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta name="description" content="填空选择 括号代表可省 操作系统的目标：  方便性 有效性 可扩充性 开放性">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hunz1_OS">
+<meta property="og:url" content="http://jpcr.xyz/2020/12/07/hunz1-OS/index.html">
+<meta property="og:site_name" content="hunz1&#39;s blog">
+<meta property="og:description" content="填空选择 括号代表可省 操作系统的目标：  方便性 有效性 可扩充性 开放性">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://www.hualigs.cn/image/600995f2e4ee7.jpg">
+<meta property="article:published_time" content="2020-12-07T11:40:05.000Z">
+<meta property="article:modified_time" content="2020-12-08T12:58:48.727Z">
+<meta property="article:author" content="hunz1">
+<meta property="article:tag" content="日常">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.hualigs.cn/image/600995f2e4ee7.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://jpcr.xyz/2020/12/07/hunz1-OS/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.js" defer></script><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: {"appId":"WMKXMUDZEJ","apiKey":"8f4cc1e62ce13c6c71123dfd4a761686","indexName":"hunz1_Algolia","hits":{"per_page":6},"languages":{"input_placeholder":"搜索文章","hits_empty":"找不到您查询的内容：${query}","hits_stats":"找到 ${hits} 条结果，用时 ${time} 毫秒"}},
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: hunz1","link":"链接: ","source":"来源: hunz1's blog","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+};
+
+var saveToLocal = {
+  set: function setWithExpiry(key, value, ttl) {
+    const now = new Date()
+    const expiryDay = ttl * 86400000
+    const item = {
+      value: value,
+      expiry: now.getTime() + expiryDay,
+    }
+    localStorage.setItem(key, JSON.stringify(item))
+  },
+
+  get: function getWithExpiry(key) {
+    const itemStr = localStorage.getItem(key)
+
+    if (!itemStr) {
+      return undefined
+    }
+    const item = JSON.parse(itemStr)
+    const now = new Date()
+
+    if (now.getTime() > item.expiry) {
+      localStorage.removeItem(key)
+      return undefined
+    }
+    return item.value
+  }
+}
+
+// https://stackoverflow.com/questions/16839698/jquery-getscript-alternative-in-native-javascript
+const getScript = url => new Promise((resolve, reject) => {
+  const script = document.createElement('script')
+  script.src = url
+  script.async = true
+  script.onerror = reject
+  script.onload = script.onreadystatechange = function() {
+    const loadState = this.readyState
+    if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+    script.onload = script.onreadystatechange = null
+    resolve()
+  }
+  document.head.appendChild(script)
+})</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2020-12-08 20:58:48'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(function () {  window.activateDarkMode = function () {
+    document.documentElement.setAttribute('data-theme', 'dark')
+    if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+    }
+  }
+  window.activateLightMode = function () {
+    document.documentElement.setAttribute('data-theme', 'light')
+   if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+    }
+  }
+  const autoChangeMode = 'false'
+  const t = saveToLocal.get('theme')
+  if (autoChangeMode === '1') {
+    const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+    const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+    const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+    if (t === undefined) {
+      if (isLightMode) activateLightMode()
+      else if (isDarkMode) activateDarkMode()
+      else if (isNotSpecified || hasNoSupport) {
+        const now = new Date()
+        const hour = now.getHours()
+        const isNight = hour <= 6 || hour >= 18
+        isNight ? activateDarkMode() : activateLightMode()
+      }
+      window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+        if (saveToLocal.get('theme') === undefined) {
+          e.matches ? activateDarkMode() : activateLightMode()
+        }
+      })
+    } else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else if (autoChangeMode === '2') {
+    const now = new Date()
+    const hour = now.getHours()
+    const isNight = hour <= 6 || hour >= 18
+    if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+    else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else {
+    if (t === 'dark') activateDarkMode()
+    else if (t === 'light') activateLightMode()
+  }const asideStatus = saveToLocal.get('aside-status')
+if (asideStatus !== undefined) {
+   if (asideStatus === 'hide') {
+     document.documentElement.classList.add('hide-aside')
+   } else {
+     document.documentElement.classList.remove('hide-aside')
+   }
+}const fontSizeVal = saveToLocal.get('global-font-size')
+if (fontSizeVal !== undefined) {
+  document.documentElement.style.setProperty('--global-font-size', fontSizeVal + 'px')
+}})()</script><meta name="generator" content="Hexo 5.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">18</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">3</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">12</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://www.hualigs.cn/image/600995f2e4ee7.jpg)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">hunz1's blog</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">hunz1_OS</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-12-07T11:40:05.000Z" title="发表于 2020-12-07 19:40:05">2020-12-07</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2020-12-08T12:58:48.727Z" title="更新于 2020-12-08 20:58:48">2020-12-08</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%97%A5%E5%B8%B8/">日常</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">2.1k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>6分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span><span class="post-meta-separator">|</span><span class="post-meta-commentcount"><i class="far fa-comments fa-fw post-meta-icon"></i><span class="post-meta-label">评论数:</span><a href="/2020/12/07/hunz1-OS/#post-comment" itemprop="discussionUrl"><span class="valine-comment-count" data-xid="/2020/12/07/hunz1-OS/" itemprop="commentCount"></span></a></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="填空选择"><a class="markdownIt-Anchor" href="#填空选择"></a> 填空选择</h2>
+<p>括号代表可省<br />
+操作系统的目标：</p>
+<ul>
+<li>方便性</li>
+<li>有效性</li>
+<li>可扩充性</li>
+<li>开放性</li>
+</ul>
+<a id="more"></a>
+<p>分时系统的特征：</p>
+<ul>
+<li>多路性</li>
+<li>独立性</li>
+<li>及时性</li>
+<li>交互性</li>
+</ul>
+<p>实时系统的特征：</p>
+<ul>
+<li>多路性</li>
+<li>独立性</li>
+<li>及时性</li>
+<li>交互性</li>
+<li>可靠性</li>
+</ul>
+<p>操作系统的特征：</p>
+<ul>
+<li>并发性</li>
+<li>共享性</li>
+<li>虚拟性</li>
+<li>异步性</li>
+</ul>
+<p>操作系统的主要功能：</p>
+<ul>
+<li>处理机管理
+<ul>
+<li>进程控制</li>
+<li>进程同步</li>
+<li>进程通信</li>
+<li>调度</li>
+</ul>
+</li>
+<li>文件管理
+<ul>
+<li>文件存储空间管理</li>
+<li>目录管理</li>
+<li>文件读/写管理和保护</li>
+</ul>
+</li>
+<li>设备管理
+<ul>
+<li>缓冲管理</li>
+<li>设备分配</li>
+<li>设备处理</li>
+</ul>
+</li>
+<li>存储器管理
+<ul>
+<li>内存分配</li>
+<li>内存保护</li>
+<li>地址映射</li>
+<li>内存扩充</li>
+</ul>
+</li>
+<li>(用户接口)</li>
+</ul>
+<p>程序顺序执行的特征：</p>
+<ul>
+<li>顺序性</li>
+<li>封闭性</li>
+<li>可再现性</li>
+</ul>
+<p>程序并发执行的特征：</p>
+<ul>
+<li>间断性</li>
+<li>失去封闭性</li>
+<li>不可再现性</li>
+</ul>
+<p>进程的特征：</p>
+<ul>
+<li>动态性</li>
+<li>并发性</li>
+<li>独立性</li>
+<li>异步性</li>
+<li>(结构特性)</li>
+</ul>
+<p>虚拟存储器的特征：</p>
+<ul>
+<li>多次性</li>
+<li>对换性</li>
+<li>虚拟性</li>
+<li>离散性</li>
+</ul>
+<h2 id="算法总结"><a class="markdownIt-Anchor" href="#算法总结"></a> 算法总结</h2>
+<p>###作业调度算法</p>
+<ol>
+<li>
+<p>FCFS(First come first served)先来先服务调度算法<br />
+既可用于作业调度,也可用于进程调度<br />
+按照先后次序来进行作业调度,优先考虑在系统中等待时间最长的作业<br />
+等待时间越长,优先级越高<br />
+优点:有利于CPU繁忙,有利于长作业<br />
+缺点:不利于I/O繁忙</p>
+</li>
+<li>
+<p>SJF(short Job First)短作业调度算法<br />
+按照作业长短来计算优先级,作业越短,优先级越高<br />
+优点:比FCFS算法有明显改善<br />
+缺点:<br />
+1)必须预先知道作业的运行时间<br />
+2)对长作业不利,长作业的运转周期会明显变长<br />
+3)在采用SJF算法时,人-机无法实现交互<br />
+4)该调度算法完全未考虑作业的紧迫程度,故不能保证紧迫性作业得到及时处理</p>
+</li>
+<li>
+<p>PSA(Priority Scheduling algorithm)优先级调度算法<br />
+基于作业的紧迫程度,由外部赋予作业相应的优先级</p>
+</li>
+<li>
+<p>HRRN(Highest Response Ratio Next)高响应比优先调度算法<br />
+优先级 = (等待时间 + 服务时间) / 服务时间<br />
+= 1 + 等待时间 / 服务时间<br />
+优先级随着等待时间增长而增加,<br />
+1)如果等待时间相同,则要求服务的时间越短,其优先权越高,v<br />
+2)当要求服务时间相同时,作业的优先权又决定于其等待时间,因而该算法又类似于FCFS算法,<br />
+3)对于长作业优先级,可以随着等待时间的增加而提高,当其等待时间足够长时,也可获得处理机</p>
+</li>
+<li>
+<p>轮转调度算法<br />
+时间片轮转(round robin)调度算法<br />
+优点:选择很小的时间片有利于短作业<br />
+缺点:时间偏小,增加系统开销</p>
+</li>
+<li>
+<p>非抢占式调度算法</p>
+</li>
+<li>
+<p>抢占式调度算法<br />
+1)发生时钟中断时,新来的优先级高的抢占处理机<br />
+2)一旦外部出现中断,只要当前任务未处于临界区,立即抢占</p>
+</li>
+<li>
+<p>最早截至时间优先算法EDF(Earliest Deadline First)<br />
+根据任务截止时间确定任务的优先级,任务截止时间越早,优先级越高</p>
+</li>
+<li>
+<p>最低松弛度优先算法(Least Laxity First)<br />
+根据任务的紧急(松弛)程度,任务紧急程度越高,优先级越高</p>
+</li>
+<li>
+<p>银行家算法</p>
+</li>
+</ol>
+<p>###基于顺序搜索的动态分区分配算法</p>
+<ol>
+<li>
+<p>首次适应(First Fit, FF)算法<br />
+FF算法要求空闲分区链以<strong>地址递增</strong>的次序链接,<br />
+优先利用内存中低址部分的空闲分区,从而保留了高址部分的大空闲区</p>
+</li>
+<li>
+<p>循环首次适应(next fit, NF)算法、</p>
+<p>从<strong>上次找到</strong>的空闲分区开始查找</p>
+</li>
+<li>
+<p>最佳适应(best fit, BF)算法</p>
+<p>把<strong>总能满足要求的最小</strong>空闲分区分配给作业,容量从小到大的顺序形成空闲分区链</p>
+</li>
+<li>
+<p>最坏适应(worst fit, WF)算法</p>
+<p>从中找一个<strong>最大空闲区</strong>,从中割一部分存储空间给作业使用<br />
+优点:是剩下的空闲区不至于太小,产生碎片的可能性最小,对中小作业有利<br />
+其容量从大到小的顺序<br />
+###基于索引搜索的动态分区分配算法</p>
+</li>
+<li>
+<p>快速适应(quick fit, QF)算法</p>
+<p>根据其容量大小进行分类,对于每一类具有相同容量的所有空闲分区,单独设立空闲分区链表,这样的系统存在多个空闲分区链表<br />
+该算法进行空闲分区分配时,<strong>不会对任何分区分割</strong>,所以能保留大的分区,满足对大空间的要求,也不会产生内存碎片.<br />
+优点：查找效率高<br />
+缺点：为了有效合并分区,在分区归还主存时的算法复杂,系统开销较大.此外,该算法在分配空闲区时,是以进程为单位的,一个分区只属于一个进程,因此在进程分配的一个分区中,或多或少存在一定的浪费,这是典型的以<strong>空间换时间</strong>的算法</p>
+</li>
+<li>
+<p>伙伴系统(buddy system)</p>
+<p>对于具有相同大小的所有空闲区间,单独设立一个空闲分区双向链表</p>
+</li>
+<li>
+<p>哈希算法</p>
+<p>哈希算法利用哈希快速查找的优点,以及空闲分区在可利用空闲区表的分布规律,建立哈希函数,构造一张以空闲分区大小为关键字的哈希表,该表的每一个表项纪录了一个对应的空闲分区链表表头指针</p>
+</li>
+</ol>
+<h3 id="页面置换算法"><a class="markdownIt-Anchor" href="#页面置换算法"></a> 页面置换算法</h3>
+<p><strong>抖动</strong></p>
+<ol>
+<li>
+<p>最佳(Optimal)置换算法</p>
+<p>其选择的淘汰页面是以后不使用的,或许是<strong>最长时间内不再被访问</strong>的页面<br />
+优点：可以保证最低的缺页率<br />
+缺点：无法预估哪个是未来最长时间内不再被访问的页面</p>
+</li>
+<li>
+<p>先进先出(First In First Out, FIFO)页面置换算法</p>
+<p>淘汰<strong>最先进入内存</strong>的页面</p>
+</li>
+<li>
+<p>最近最久未使用(Least Recently Used, LRU)算法</p>
+<p>选择最近最久未使用的页面进行淘汰(看的是<strong>时间</strong>)</p>
+</li>
+<li>
+<p>最少使用(Least Frequently Used, LFU)置换算法</p>
+<p>淘汰最近时期使用<strong>最少</strong>的页面(看的是<strong>次数</strong>)</p>
+</li>
+<li>
+<p>Clock置换算法</p>
+<p>简单的Clock算法<br />
+当某页被访问时,期房文位被置1,置换算法在选择一页淘汰时,只需检查页的访问位。如果是0，就选择将该页换出；若为1，则重新将它置0，暂不换出，再按照FIFO算法检查下一个页面<br />
+改进型Clock置换算法<br />
+1类(A=0,M=0),表示该页最近既未被访问,又未被修改,是最佳淘汰页<br />
+2类(A=0,M=1),表示该页最近未被访问,但已被修改,并不是很好的淘汰页<br />
+3类(A=1,M=0),表示该页最近已被访问,但未被修改,该页有可能再被访问<br />
+4类(A=1,M=1),表示该页最近已被访问且被修改,该页可能再被访问</p>
+</li>
+</ol>
+<h3 id="早期磁盘调度算法"><a class="markdownIt-Anchor" href="#早期磁盘调度算法"></a> 早期磁盘调度算法</h3>
+<ol>
+<li>
+<p>先来先服务</p>
+<p>公平简单,平均寻道距离大,仅应用到磁盘I/O较少的场合</p>
+</li>
+<li>
+<p>最短寻道时间优先(Shortest Seek Time First, SSTF)</p>
+<p>性能比先来先服务好<br />
+不能保证平均寻道时间最短<br />
+可能会出现<strong>饥饿</strong>现象</p>
+</li>
+</ol>
+<h3 id="基于扫描的磁盘调度算法"><a class="markdownIt-Anchor" href="#基于扫描的磁盘调度算法"></a> 基于扫描的磁盘调度算法</h3>
+<p><strong>磁臂粘着</strong></p>
+<ol>
+<li>
+<p>扫描(SCAN)算法</p>
+<p>寻道性能好,避免出现饥饿现象<br />
+不利于远离磁头一端的访问请求</p>
+</li>
+<li>
+<p>循环(CSCAN)扫描算法</p>
+<p>消除了对两端磁道访问的不公平</p>
+</li>
+<li>
+<p>NStepSCAN调度算法</p>
+<p>N步SCAN算法是将磁盘请求队列分成若干个长度为N的子队列,磁盘调度将按<strong>FCFS</strong>算法依次处理这些子队列</p>
+</li>
+<li>
+<p>FSCAN调度算法</p>
+<p>是N步SCAN算法的简化,只将请求队列分成两个队列,一个是有当前所请求磁盘I/O的进程形成的队列,由磁盘调度按SCAN算法进行处理.另一个是在扫描期间,将新出现的所有请求磁盘I/O的进程放入等待处理的请求队列,这样,所有的新请求都被推迟到下一次扫描时处理</p>
+</li>
+</ol>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">hunz1</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://jpcr.xyz/2020/12/07/hunz1-OS/">http://jpcr.xyz/2020/12/07/hunz1-OS/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://jpcr.xyz" target="_blank">hunz1's blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%97%A5%E5%B8%B8/">日常</a></div><div class="post_share"><div class="social-share" data-image="https://www.hualigs.cn/image/600995f2e4ee7.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2020/12/06/OS/"><img class="next-cover" src="https://www.hualigs.cn/image/600995f2e4ee7.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">OS</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2020/10/04/农产品溯源系统用户手册/" title="农产品溯源系统用户手册"><img class="cover" src="https://www.hualigs.cn/image/600995f2e4ee7.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-10-04</div><div class="title">农产品溯源系统用户手册</div></div></a></div><div><a href="/2020/06/30/2020-SummerPlan/" title="2020 SummerPlan"><img class="cover" src="https://www.hualigs.cn/image/600995f2e4ee7.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-06-30</div><div class="title">2020 SummerPlan</div></div></a></div><div><a href="/2019/03/10/FirstBlog/" title="Bank"><img class="cover" src="https://www.hualigs.cn/image/600995f2e4ee7.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2019-03-10</div><div class="title">Bank</div></div></a></div><div><a href="/2020/12/06/OS/" title="OS"><img class="cover" src="https://www.hualigs.cn/image/600995f2e4ee7.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-12-06</div><div class="title">OS</div></div></a></div><div><a href="/2019/07/10/SummerPlan/" title="2019 SummerPlan"><img class="cover" src="https://www.hualigs.cn/image/600995f2e4ee7.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2019-07-10</div><div class="title">2019 SummerPlan</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">hunz1</div><div class="author-info__description">Cloud 9</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">18</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">3</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">12</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Ah_Daii"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/AhDaii" target="_blank" title="Github"><i class="fab fa-github"></i></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A1%AB%E7%A9%BA%E9%80%89%E6%8B%A9"><span class="toc-number">1.</span> <span class="toc-text"> 填空选择</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93"><span class="toc-number">2.</span> <span class="toc-text"> 算法总结</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A1%B5%E9%9D%A2%E7%BD%AE%E6%8D%A2%E7%AE%97%E6%B3%95"><span class="toc-number">2.1.</span> <span class="toc-text"> 页面置换算法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%A9%E6%9C%9F%E7%A3%81%E7%9B%98%E8%B0%83%E5%BA%A6%E7%AE%97%E6%B3%95"><span class="toc-number">2.2.</span> <span class="toc-text"> 早期磁盘调度算法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E4%BA%8E%E6%89%AB%E6%8F%8F%E7%9A%84%E7%A3%81%E7%9B%98%E8%B0%83%E5%BA%A6%E7%AE%97%E6%B3%95"><span class="toc-number">2.3.</span> <span class="toc-text"> 基于扫描的磁盘调度算法</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2020/12/07/hunz1-OS/" title="hunz1_OS"><img src="https://www.hualigs.cn/image/600995f2e4ee7.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="hunz1_OS"/></a><div class="content"><a class="title" href="/2020/12/07/hunz1-OS/" title="hunz1_OS">hunz1_OS</a><time datetime="2020-12-07T11:40:05.000Z" title="发表于 2020-12-07 19:40:05">2020-12-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/12/06/OS/" title="OS"><img src="https://www.hualigs.cn/image/600995f2e4ee7.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="OS"/></a><div class="content"><a class="title" href="/2020/12/06/OS/" title="OS">OS</a><time datetime="2020-12-06T07:23:53.000Z" title="发表于 2020-12-06 15:23:53">2020-12-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/10/04/%E5%86%9C%E4%BA%A7%E5%93%81%E6%BA%AF%E6%BA%90%E7%B3%BB%E7%BB%9F%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/" title="农产品溯源系统用户手册"><img src="https://www.hualigs.cn/image/600995f2e4ee7.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="农产品溯源系统用户手册"/></a><div class="content"><a class="title" href="/2020/10/04/%E5%86%9C%E4%BA%A7%E5%93%81%E6%BA%AF%E6%BA%90%E7%B3%BB%E7%BB%9F%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/" title="农产品溯源系统用户手册">农产品溯源系统用户手册</a><time datetime="2020-10-04T05:29:55.000Z" title="发表于 2020-10-04 13:29:55">2020-10-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/06/30/2020-SummerPlan/" title="2020 SummerPlan"><img src="https://www.hualigs.cn/image/600995f2e4ee7.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2020 SummerPlan"/></a><div class="content"><a class="title" href="/2020/06/30/2020-SummerPlan/" title="2020 SummerPlan">2020 SummerPlan</a><time datetime="2020-06-30T15:44:36.000Z" title="发表于 2020-06-30 23:44:36">2020-06-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/05/18/SortAlgorithm/" title="排序算法"><img src="https://www.hualigs.cn/image/600995f2e4ee7.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="排序算法"/></a><div class="content"><a class="title" href="/2020/05/18/SortAlgorithm/" title="排序算法">排序算法</a><time datetime="2020-05-18T10:32:00.000Z" title="发表于 2020-05-18 18:32:00">2020-05-18</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2021 By hunz1</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="font-plus" type="button" title="放大字体"><i class="fas fa-plus"></i></button><button id="font-minus" type="button" title="缩小字体"><i class="fas fa-minus"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="algolia-search"><div class="search-dialog"><div class="search-dialog__title" id="algolia-search-title">Algolia</div><div id="algolia-input-panel"><div id="algolia-search-input"></div></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-stats"></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/search/algolia.js"></script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    let initData = {
+      el: '#vcomment',
+      appId: '2YNzYgVeaxp8kkBIdTP22DSy-gzGzoHsz',
+      appKey: 'HlBCJzjgEEtMurse1kQ29dk3',
+      placeholder: '说点什么吧~',
+      avatar: 'monsterid',
+      meta: 'nick,mail,link'.split(','),
+      pageSize: '10',
+      lang: 'zh-CN',
+      recordIP: false,
+      serverURLs: '',
+      emojiCDN: '',
+      emojiMaps: "",
+      enableQQ: false,
+      path: window.location.pathname,
+    }
+
+    if (true) { 
+      initData.requiredFields= ('nick,mail'.split(','))
+    }
+    
+    if (false) {
+      const otherData = false
+      initData = Object.assign(initData, otherData)
+    }
+    
+    const valine = new Valine(initData)
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !false) {
+  if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></div></body></html>
