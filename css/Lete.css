@@ -1,3 +1,16 @@
+#article-container.post-content h1:before, #article-container.post-content h2:before, #article-container.post-content h3:before, #article-container.post-content h4:before, #article-container.post-content h5:before, #article-container.post-content h6:before {
+    position: absolute;
+    top: calc(50% - 0.35rem);
+    color: #8c7ae6;
+    content: '\f0e7';
+    line-height: 1;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
 .fontawesomeIcon,
 hr:before,
 #article-container.post-content h1:before,
