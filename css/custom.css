@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'FiraCode';
+  src: url(http://s18ilv4j8.bkt.clouddn.com/font/FiraCodeNerdFont-Regular.ttf?e=1695212376&token=u_kKfa9mHM11nES93Zpsazr4u4cNrg6MTZXFhW7i:K3u2UHIgUGFiCbrvdg2fyyIexv8=) format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HanYiTMR';
+  src: url(http://s18ilv4j8.bkt.clouddn.com/font/HYTangMeiRen65W.ttf?e=1695212481&token=u_kKfa9mHM11nES93Zpsazr4u4cNrg6MTZXFhW7i:WFSGtWrJoRFpXhvVuAovSiL-11U=) format("truetype");
+  /* font-display: swap; */
+}
+
+/*哔哩哔哩视频适配*/
+.aspect-ratio {
+  position: relative;
+  width: 95%;
+  height: auto;
+  padding-bottom: 75%;
+  margin: 3% auto;
+  text-align: center;
+}
+.aspect-ratio iframe {
+  position: absolute;
+  width: 100%;
+  height: 86%;
+  left: 0;
+  top: 0;
+}
